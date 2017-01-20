@@ -5,13 +5,15 @@ import sys
 import time
 import urllib
 import urllib2
-
+import quip
 
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+client = quip.QuipClient(access_token="VUZlQU1BN0tZajk=|1516466133|whq6sTaYVldRrNWFs8Nw584tbXpgenX0rJgizoIHvUg=")
+
 def run():
-	client = quip.QuipClient("VUZlQU1BN0tZajk=|1516466133|whq6sTaYVldRrNWFs8Nw584tbXpgenX0rJgizoIHvUg=")
+	# client = quip.QuipClient(access_token="VUZlQU1BN0tZajk=|1516466133|whq6sTaYVldRrNWFs8Nw584tbXpgenX0rJgizoIHvUg=")
 	
 	newdocument()
 
